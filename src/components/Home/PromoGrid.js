@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const PromoGrid = () => {
 	return (
 		<div className="parent-grid">
-			<div className="grid-two-fields grid-field">
+			<div className="image-wrapper">
 				<Link>
 					<img
 						className="promo-grid-img"
@@ -13,7 +13,7 @@ export const PromoGrid = () => {
 					/>
 				</Link>
 			</div>
-			<div className="grid-one-field-1 grid-field">
+			<div className="image-wrapper">
 				<Link>
 					<img
 						className="promo-grid-img"
@@ -22,7 +22,7 @@ export const PromoGrid = () => {
 					/>
 				</Link>
 			</div>
-			<div className="grid-one-field-2 grid-field">
+			<div className="image-wrapper">
 				<Link>
 					<img
 						className="promo-grid-img"
@@ -31,7 +31,7 @@ export const PromoGrid = () => {
 					/>
 				</Link>
 			</div>
-			<div className="grid-one-field-3 grid-field">
+			<div className="image-wrapper">
 				<Link>
 					<img
 						className="promo-grid-img"
@@ -40,7 +40,7 @@ export const PromoGrid = () => {
 					/>
 				</Link>
 			</div>
-			<div className="grid-one-field-4 grid-field">
+			<div className="image-wrapper">
 				<Link>
 					<img
 						className="promo-grid-img"
