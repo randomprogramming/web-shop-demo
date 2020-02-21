@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "../css/ProductPage.css";
 import { ProductFullDescription } from "../components/ProductPage/ProductFullDescription";
+import { PurchasePanel } from "../components/ProductPage/PurchasePanel";
 
 export const ProductPage = () => {
 	//Fetch the information about the product when the component mounts
@@ -29,7 +30,7 @@ export const ProductPage = () => {
 			<div className="product-full-description">
 				{/* Pass in the description of the current product and all the needed stuff here */}
 				<ProductFullDescription description={product.description} />
-				<div className="product-purchase-panel"> right</div>
+				<PurchasePanel brand={product.brand} price={product.price} />
 			</div>
 		</div>
 	);

@@ -11,7 +11,12 @@ export const CollapsableSection = props => {
 		<div style={props.hasBorder ? { borderBottom: "1px solid black", marginBottom: "7px" } : {}}>
 			<div
 				className="collapsable-section-header"
-				style={{ display: "flex", flexDirection: "row", margin: "0px 0px 1rem 0px" }}
+				style={{
+					display: "flex",
+					flexDirection: "row",
+					margin: "0px 0px 1rem 0px",
+					padding: "3px 3px 3px 0px",
+				}}
 				onClick={handleCollapse}
 			>
 				<h2 className="unselectable" style={{ flex: 1, margin: "0", padding: "0" }}>

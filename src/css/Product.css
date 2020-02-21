@@ -36,7 +36,8 @@
 
 .product-name {
 	flex: 6;
-	margin-top: 3px;
+	margin-top: 2px;
+	line-height: 1.2 !important;
 }
 
 .product-price-and-colors {
