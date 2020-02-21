@@ -5,7 +5,7 @@ import { ProductFullDescription } from "../components/ProductPage/ProductFullDes
 import { PurchasePanel } from "../components/ProductPage/PurchasePanel";
 
 export const ProductPage = () => {
-	//Fetch the information about the product when the component mounts
+	//TODO: Fetch the information about the product when the component mounts
 	const [product, setProduct] = useState({
 		id: "567311C",
 		linksToImages: [

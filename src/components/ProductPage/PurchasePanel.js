@@ -5,6 +5,8 @@ export const PurchasePanel = ({ brand, price, avaliableSizes }) => {
 	const [selectedStandard, setSelectedStandard] = useState("EU");
 
 	const handleClickOnStandard = standard => {
+		// TODO: Update global state instead of just in this component
+		// This gets called when the user selects some size standard of product
 		setSelectedStandard(standard);
 	};
 
@@ -22,7 +24,7 @@ export const PurchasePanel = ({ brand, price, avaliableSizes }) => {
 					<strong>{price.toFixed(2)} HRK</strong>
 				</div>
 			</div>
-			<div className="product-size-select">
+			<div className="product-size-select small-margin-top">
 				<div className="sizes-standars-container">
 					<h1 className="size-header-text">Standard veličine:</h1>
 					<ul className="size-standards-list">
@@ -49,7 +51,7 @@ export const PurchasePanel = ({ brand, price, avaliableSizes }) => {
 						</li>
 					</ul>
 				</div>
-				<div className="number-sizes-container">
+				<div className="number-sizes-container small-margin-top">
 					<h1 className="size-header-text">Veličina:</h1>
 					<ul className="avaliable-sizes-list">
 						{avaliableSizes.map(size => {
@@ -66,6 +68,9 @@ export const PurchasePanel = ({ brand, price, avaliableSizes }) => {
 						})}
 					</ul>
 				</div>
+			</div>
+			<div className="add-to-cart small-margin-top">
+				<button className="add-to-cart-button">Dodaj u košaricu</button>
 			</div>
 		</div>
 	);
