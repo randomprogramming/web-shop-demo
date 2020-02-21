@@ -1,5 +1,5 @@
 .main-product-container {
-	height: 350px;
+	height: 375px;
 	width: 250px;
 	display: flex;
 	flex-direction: column;
@@ -49,4 +49,34 @@
 .product-price {
 	font-family: monospace !important;
 	float: right;
+}
+
+.product-colors-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.product-color {
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	margin-right: 3px;
+	border: 1px solid black;
+}
+
+.color-red {
+	background-color: rgb(160, 4, 4);
+}
+
+.color-black {
+	background-color: black;
+}
+
+.color-white {
+	background-color: white;
+}
+
+.color-sand {
+	background-color: lightcoral;
 }

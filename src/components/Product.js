@@ -20,8 +20,12 @@ export const Product = ({ id, linkToImage, brand, name, price }) => {
 				<div className="product-name">{name}</div>
 				<div className="product-price-and-colors">
 					<div className="product-color-container">
-						<ul className="">
-							<il className="product-color color-red"></il>
+						<ul className="product-colors-list">
+							{/* TODO: Fetch this data from the server, currently it's hardcoded since I don't have access to the data */}
+							<li className="product-color color-red"></li>
+							<li className="product-color color-black"></li>
+							<li className="product-color color-white"></li>
+							<li className="product-color color-sand"></li>
 						</ul>
 					</div>
 					<div className="product-price-container">
