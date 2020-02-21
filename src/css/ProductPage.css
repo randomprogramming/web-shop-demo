@@ -1,0 +1,26 @@
+.product-page-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.product-name-large {
+	padding: 0;
+	margin: 0;
+	font-size: 36px;
+	z-index: 5;
+	position: relative;
+}
+
+.product-page-image-large {
+	/* I moved the image 2rem to the top because there was loads of whitespace, this might cut out some images potentially */
+	position: relative;
+	bottom: 2rem;
+	z-index: 1;
+}
+
+.product-image-large {
+	max-height: 600px;
+	width: auto;
+}
