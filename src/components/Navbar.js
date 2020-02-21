@@ -10,19 +10,19 @@ export const Navbar = () => {
 				<div className="logo-container">Logo</div>
 				<div className="nav-link-container">
 					<NavLink to="/test" className="nav-link">
-						Link
+						O nama
 					</NavLink>
 					<NavLink to="/test" className="nav-link">
-						Link
+						Novosti
 					</NavLink>
 					<NavLink to="/test" className="nav-link">
-						Link
+						Trgovine
 					</NavLink>
 					<NavLink to="/test" className="nav-link">
-						Link
+						Brandovi
 					</NavLink>
 					<NavLink to="/test" className="nav-link">
-						Link
+						Lifestyle
 					</NavLink>
 				</div>
 				<div className="account-controls-container">
