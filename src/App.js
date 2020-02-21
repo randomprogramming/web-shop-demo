@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import { Home } from "./views/Home";
 import { Navbar } from "./components/Navbar";
+import { ShopHeader } from "./components/ShopHeader/ShopHeader";
 
 const App = () => {
 	return (
@@ -12,7 +13,10 @@ const App = () => {
 				<Navbar />
 			</nav>
 			<Switch>
-				<Route exact link="/" component={Home} />
+				<Route exact path="/">
+					<ShopHeader />
+					<Home />
+				</Route>
 			</Switch>
 		</div>
 	);
