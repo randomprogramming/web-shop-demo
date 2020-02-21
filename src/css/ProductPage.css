@@ -35,9 +35,13 @@
 .product-description-container {
 	flex: 1;
 	font-size: 16px;
+	/* This is here to create a gap between the description and the purchase panel, should find a better solution in the future */
+	margin-right: 1rem;
 }
 
 .product-purchase-panel {
+	/* This is here to create a gap between the description and the purchase panel, should find a better solution in the future */
+	margin-left: 1rem;
 	flex: 1;
 }
 
@@ -55,4 +59,53 @@
 
 .product-price-large-container {
 	font-family: monospace;
+}
+
+.avaliable-sizes-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	grid-column-gap: 14px;
+	grid-row-gap: 14px;
+}
+
+.product-size-select {
+	margin-top: 1rem;
+}
+
+.product-size {
+	font-size: 20px;
+	background-color: #ececec;
+	text-align: center;
+	padding: 4px 0px;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+.product-size:hover {
+	background-color: #dfdfdf;
+}
+
+.size-standards-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 14px;
+	grid-row-gap: 14px;
+}
+
+.number-sizes-container {
+	margin-top: 2rem;
+}
+
+.size-header-text {
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
 }

@@ -14,7 +14,8 @@ export const ProductFullDescription = ({ description }) => {
 				</ul>
 			</CollapsableSection>
 			<CollapsableSection hasBorder sectionName="Isporuka"></CollapsableSection>
-			<CollapsableSection sectionName="Kontakt"></CollapsableSection>
+			<CollapsableSection hasBorder sectionName="Kontakt"></CollapsableSection>
+			<CollapsableSection sectionName="Načini plaćanja"></CollapsableSection>
 		</div>
 	);
 };
