@@ -27,12 +27,13 @@
 
 .product-full-description {
 	width: 75%;
+	height: 800px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 }
 
-.product-description-container {
+.product-description-large-container {
 	flex: 1;
 	font-size: 16px;
 	/* This is here to create a gap between the description and the purchase panel, should find a better solution in the future */
@@ -103,7 +104,7 @@
 }
 
 .small-margin-top {
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 
 .add-to-cart-button {

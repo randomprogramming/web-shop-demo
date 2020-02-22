@@ -3,7 +3,7 @@ import { CollapsableSection } from "./CollapsableSection";
 
 export const ProductFullDescription = ({ description }) => {
 	return (
-		<div className="product-description-container">
+		<div className="product-description-large-container">
 			{/*TODO:  Make it only so that 1 section can be visible, the rest are collapsed */}
 			<CollapsableSection hasBorder sectionName="Opis proizvoda">
 				<p className="description-paragraph">{description}</p>
