@@ -14,9 +14,32 @@
 }
 
 .product-page-image-large {
+	display: flex;
+	flex-direction: row;
+}
+
+.product-page-image-large > img {
+	object-fit: contain;
+	height: 550px;
+	width: 550px;
+}
+
+.product-image-button {
+	align-self: center;
+	margin: 0 1.5rem;
+}
+
+.image-selector {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.product-page-image-large {
 	/* I moved the image 2rem to the top because there was loads of whitespace, this might cut out some images potentially */
-	position: relative;
-	bottom: 2rem;
+	/* position: relative;
+	bottom: 2rem; */
 	z-index: 1;
 }
 

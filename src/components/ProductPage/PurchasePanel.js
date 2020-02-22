@@ -29,21 +29,21 @@ export const PurchasePanel = ({ brand, price, avaliableSizes }) => {
 					<h1 className="size-header-text">Standard veličine:</h1>
 					<ul className="size-standards-list">
 						<li
-							className="product-size"
+							className="product-size unselectable"
 							onClick={e => handleClickOnStandard("EU")}
 							style={selectedStandard === "EU" ? { backgroundColor: "#f4e802" } : {}}
 						>
 							EU
 						</li>
 						<li
-							className="product-size"
+							className="product-size unselectable"
 							onClick={e => handleClickOnStandard("US")}
 							style={selectedStandard === "US" ? { backgroundColor: "#f4e802" } : {}}
 						>
 							US
 						</li>
 						<li
-							className="product-size"
+							className="product-size unselectable"
 							onClick={e => handleClickOnStandard("UK")}
 							style={selectedStandard === "UK" ? { backgroundColor: "#f4e802" } : {}}
 						>
