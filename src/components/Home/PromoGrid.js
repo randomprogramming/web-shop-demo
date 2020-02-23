@@ -33,8 +33,12 @@ export const PromoGrid = () => {
 	];
 	return (
 		<div className="parent-grid">
-			{PROMO_BOXES.map(promoBox => (
-				<PromoGridItem linkToImage={promoBox.linkToImage} redirectURL={promoBox.redirectURL} />
+			{PROMO_BOXES.map((promoBox, i) => (
+				<PromoGridItem
+					key={i}
+					linkToImage={promoBox.linkToImage}
+					redirectURL={promoBox.redirectURL}
+				/>
 			))}
 		</div>
 	);

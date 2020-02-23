@@ -5,8 +5,11 @@ import { ProductFullDescription } from "../components/ProductPage/ProductFullDes
 import { PurchasePanel } from "../components/ProductPage/PurchasePanel";
 import { ImageHolderSmall } from "../components/ProductPage/ImageHolderSmall";
 
+import ReactLoading from "react-loading";
+
 export const ProductPage = () => {
 	const [selectedPicture, setSelectedPicture] = useState(2);
+	const [isImageLoaded, setisImageLoaded] = useState(false);
 	//TODO: Fetch the information about the product when the component mounts
 	const [product, setProduct] = useState({
 		id: "567311C",
@@ -66,11 +69,31 @@ export const ProductPage = () => {
 						<polyline points="15 18 9 12 15 6"></polyline>
 					</svg>
 				</div> */}
+
+				{/* Loading icon for when the image isn't loaded */}
+				<div
+					style={
+						isImageLoaded
+							? { display: "none" }
+							: {
+									height: "600px",
+									width: "600px",
+									display: "grid",
+									justifyItems: "center",
+									alignItems: "center",
+							  }
+					}
+				>
+					<ReactLoading type="spin" height={64} width={64} color="#888" />
+				</div>
 				<img
+					style={isImageLoaded ? {} : { display: "none" }}
 					className="product-image-large unselectable"
 					src={product.linksToImages[selectedPicture]}
 					alt="product"
+					onLoad={e => setisImageLoaded(true)}
 				/>
+
 				{/* <div className="product-image-right-button product-image-button">
 					<svg
 						viewBox="0 0 24 24"
@@ -91,7 +114,11 @@ export const ProductPage = () => {
 			</div>
 			<div className="image-selector">
 				{product.linksToImages.map((imageLink, counter) => (
-					<ImageHolderSmall hoverHandler={e => handleHover(counter)} imageLink={imageLink} />
+					<ImageHolderSmall
+						key={counter}
+						hoverHandler={e => handleHover(counter)}
+						imageLink={imageLink}
+					/>
 				))}
 			</div>
 			<div className="product-full-description">
